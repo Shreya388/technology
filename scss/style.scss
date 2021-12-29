@@ -23,7 +23,7 @@ img {
 
 .showcase {
     @include set-background($primary-color);
-    height: 600px;
+    height: 700px;
     
 
     nav {
@@ -57,10 +57,11 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 30pt auto;
+        margin: 50pt auto;
 
         img {
             width: 50%;
+            pointer-events: none;
         }
 
         h1 {
@@ -74,3 +75,71 @@ img {
     }
 }
 
+//ourServices
+.service{
+    @include set-background($secondary-color);
+    height: 700px;
+    
+    .service-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    h1{
+        font-size: 40px;
+        line-height: 1.2;
+        color:set-text-color($primary-color);
+    }
+
+    p{
+        font-size: 16pt;
+    }
+
+    .icons{
+        font-size: 60pt;
+        color: $primary-color;
+    }
+
+    .paragraph{
+        font-size: 11pt;
+    }
+
+}
+}
+
+
+//Portfolio
+.portfolio{
+    @include set-background($light-color);
+    height: 700px;
+    
+    .portfolio-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    h1{
+        font-size: 40px;
+        line-height: 1.2;
+        color:rgb(0, 0, 0);
+    }
+
+    p{
+        font-size: 16pt;
+    }
+
+    .icons{
+        font-size: 60pt;
+        color: $primary-color;
+    }
+
+    .paragraph{
+        font-size: 11pt;
+    }
+
+}
+}

@@ -1,4 +1,4 @@
-.container {
+#container {
   max-width: 1100px;
   padding: 0 30px;
   margin: 0px auto;
@@ -88,7 +88,8 @@
 .btn-secondary, .btn-primary {
   display: inline-block;
   border-radius: 5px;
-  padding: 8px 20px;
+  padding: 13px 20px;
+  border-radius: 0;
   margin: 3px;
 }
 .btn-secondary:hover, .btn-primary:hover {
@@ -96,16 +97,16 @@
 }
 
 .btn-primary {
-  background-color: #d57098;
+  background-color: #b93b7b;
 }
 
 .btn-secondary {
-  background-color: #02070f;
+  background-color: #000000;
 }
 
 @media (max-width: 700px) {
   .showcase {
-    height: 1000px;
+    height: 1200px;
   }
   .showcase-content {
     text-align: center;
@@ -113,6 +114,20 @@
   }
   .showcase-content img {
     display: none;
+  }
+
+  .service {
+    padding: 450pt 0pt;
+  }
+  .service .service-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .service .service-content h1 {
+    font-size: 12pt;
   }
 }
 @media (max-width: 900px) {
@@ -141,9 +156,9 @@ img {
 }
 
 .showcase {
-  background-color: #c9497b;
+  background-color: #b93b7b;
   color: #fff;
-  height: 600px;
+  height: 700px;
 }
 .showcase nav {
   display: flex;
@@ -158,7 +173,7 @@ img {
   padding: 15px;
 }
 .showcase nav a:hover {
-  color: #02070f;
+  color: #000000;
 }
 .showcase a {
   color: #fff;
@@ -169,10 +184,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30pt auto;
+  margin: 50pt auto;
 }
 .showcase-content img {
   width: 50%;
+  pointer-events: none;
 }
 .showcase-content h1 {
   font-size: 60px;
@@ -180,6 +196,62 @@ img {
 }
 .showcase-content p {
   margin: 10px 0;
+}
+
+.service {
+  background-color: #000000;
+  color: #fff;
+  height: 700px;
+}
+.service .service-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.service .service-content h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: #fff;
+}
+.service .service-content p {
+  font-size: 16pt;
+}
+.service .service-content .icons {
+  font-size: 60pt;
+  color: #b93b7b;
+}
+.service .service-content .paragraph {
+  font-size: 11pt;
+}
+
+.portfolio {
+  background-color: white;
+  color: #333;
+  height: 700px;
+}
+.portfolio .portfolio-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.portfolio .portfolio-content h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  color: black;
+}
+.portfolio .portfolio-content p {
+  font-size: 16pt;
+}
+.portfolio .portfolio-content .icons {
+  font-size: 60pt;
+  color: #b93b7b;
+}
+.portfolio .portfolio-content .paragraph {
+  font-size: 11pt;
 }
 
 /*# sourceMappingURL=style.css.map */

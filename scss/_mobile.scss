@@ -1,6 +1,6 @@
 @media(max-width: 700px) {
  .showcase{
-    height: 1000px;
+    height: 1200px;
     
 
     &-content {
@@ -12,4 +12,22 @@
         }
     }
 }
+
+.service{
+    padding: 450pt 0pt;
+    
+    .service-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+    h1{
+        font-size:12pt;
+    }
 }
+}
+
+}
+
