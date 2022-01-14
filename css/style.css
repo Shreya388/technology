@@ -101,19 +101,37 @@
 }
 
 .btn-secondary {
-  background-color: #000000;
+  background-color: #020c1a;
 }
 
 @media (max-width: 700px) {
   .showcase {
-    height: 1200px;
+    height: 300px;
   }
   .showcase-content {
     text-align: center;
-    margin: 50pt auto;
+    margin: 40pt auto;
   }
   .showcase-content img {
     display: none;
+  }
+  .showcase #navbar {
+    background: black;
+    padding: 11pt 0;
+    border-bottom: 1pt solid #303030;
+  }
+  .showcase #navbar a {
+    font-size: 17px;
+    color: #ebf9ff;
+    padding: 10pt 30pt;
+  }
+  .showcase #navbar a:hover {
+    padding: 10pt 30pt;
+    background: #ff0037;
+  }
+  .showcase #navbar ul {
+    padding: 60pt;
+    text-align: center;
   }
 
   .service {
@@ -127,6 +145,64 @@
     margin: 0 auto;
   }
   .service .service-content h1 {
+    font-size: 12pt;
+  }
+
+  #feature {
+    height: 800pt;
+  }
+  #feature .card_img {
+    height: 180pt;
+    background-size: cover;
+  }
+
+  #port {
+    padding: 10pt 0pt;
+  }
+  #port .card_img {
+    height: 180pt;
+    background-size: cover;
+  }
+
+  #ourteam {
+    background-color: #030616;
+    padding: 30pt 0;
+    margin-top: 40pt;
+  }
+  #ourteam #ourteam-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  #ourteam #ourteam-content h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: #fff;
+  }
+  #ourteam #ourteam-content p {
+    font-size: 16pt;
+  }
+  #ourteam #ourteam-content .icons {
+    font-size: 60pt;
+    color: #319afc;
+  }
+  #ourteam #ourteam-content .paragraph {
+    font-size: 11pt;
+  }
+
+  .footer {
+    padding: 5pt 0pt;
+  }
+  .footer .service-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer .service-content h1 {
     font-size: 12pt;
   }
 }
@@ -155,36 +231,37 @@ img {
   width: 100%;
 }
 
+#navbar {
+  background: black;
+  padding: 11pt 0;
+  border-bottom: 1pt solid #303030;
+}
+#navbar a {
+  font-size: 17px;
+  color: #ebf9ff;
+}
+
 .showcase {
   background-color: #b93b7b;
   color: #fff;
+  background: linear-gradient(120deg, #3059b3 70%, #02237e 40%);
   height: 700px;
 }
-.showcase nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.showcase .container-fluid {
+  max-width: 1500px;
 }
-.showcase nav ul {
-  display: flex;
-  list-style-type: none;
-}
-.showcase nav li {
-  padding: 15px;
-}
-.showcase nav a:hover {
-  color: #000000;
+.showcase .navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 .showcase a {
-  color: #fff;
-  text-decoration: none;
+  padding: 10pt 20pt;
 }
 .showcase-content {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 50pt auto;
+  margin: 130pt auto;
 }
 .showcase-content img {
   width: 50%;
@@ -199,7 +276,7 @@ img {
 }
 
 .service {
-  background-color: #000000;
+  background-color: #020c1a;
   color: #fff;
   height: 700px;
 }
@@ -220,38 +297,42 @@ img {
 }
 .service .service-content .icons {
   font-size: 60pt;
-  color: #b93b7b;
+  color: #c0ddf7;
 }
 .service .service-content .paragraph {
   font-size: 11pt;
 }
 
-.portfolio {
-  background-color: white;
-  color: #333;
-  height: 700px;
+#ourteam {
+  background-color: #030616;
+  padding: 150pt 0;
 }
-.portfolio .portfolio-content {
+#ourteam #ourteam-content {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
-.portfolio .portfolio-content h1 {
+#ourteam #ourteam-content h1 {
   font-size: 40px;
   line-height: 1.2;
-  color: black;
+  color: #fff;
 }
-.portfolio .portfolio-content p {
+#ourteam #ourteam-content p {
   font-size: 16pt;
 }
-.portfolio .portfolio-content .icons {
-  font-size: 60pt;
-  color: #b93b7b;
+
+.footer {
+  padding: 80pt 0pt;
+  background: #0a0a0a;
 }
-.portfolio .portfolio-content .paragraph {
-  font-size: 11pt;
+.footer a {
+  color: white;
+  font-size: 12pt;
+}
+.footer a:hover {
+  color: #689deb;
 }
 
 /*# sourceMappingURL=style.css.map */

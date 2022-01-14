@@ -21,43 +21,41 @@ img {
 }
 
 
-.showcase {
-    @include set-background($primary-color);
-    height: 700px;
-    
-
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        li {
-            padding: 15px;
-        }
-
-        a:hover {
-            color: $secondary-color;
-        }
-
-        
+#navbar{
+    background: black;
+    padding: 11pt 0;
+    border-bottom: 1pt solid rgb(48, 48, 48);
+    a{
+        font-size: 17px;
+        color: rgb(235, 249, 255);
     }
 
-    a {
-        color:set-text-color($primary-color);
-        text-decoration: none;
+}
+
+.showcase {
+    @include set-background($primary-color);
+    background: linear-gradient(120deg, rgb(48, 89, 179) 70%, rgb(2, 35, 126) 40%);
+    height: 700px;
+    
+    .container-fluid{
+        max-width: 1500px;
+    }
+    
+    .navbar-fixed-top.scrolled {
+        background-color: #fff !important;
+        transition: background-color 200ms linear;
+      }
+
+    a{
+        padding: 10pt 20pt;
     }
 
     &-content {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 50pt auto;
+        
+        margin: 130pt auto;
 
         img {
             width: 50%;
@@ -99,7 +97,7 @@ img {
 
     .icons{
         font-size: 60pt;
-        color: $primary-color;
+        color: rgb(192, 221, 247);
     }
 
     .paragraph{
@@ -110,12 +108,14 @@ img {
 }
 
 
-//Portfolio
-.portfolio{
-    @include set-background($light-color);
-    height: 700px;
+
+
+#ourteam{
     
-    .portfolio-content {
+    background-color: rgb(3, 6, 22);
+    padding: 150pt 0;
+    
+    #ourteam-content {
         height: 100%;
         display: flex;
         align-items: center;
@@ -125,21 +125,30 @@ img {
     h1{
         font-size: 40px;
         line-height: 1.2;
-        color:rgb(0, 0, 0);
+        color:set-text-color($primary-color);
     }
 
     p{
         font-size: 16pt;
     }
 
-    .icons{
-        font-size: 60pt;
-        color: $primary-color;
-    }
-
-    .paragraph{
-        font-size: 11pt;
-    }
 
 }
 }
+
+.footer{
+    
+    padding: 80pt 0pt;
+    background: rgb(10, 10, 10);
+
+    a{
+        color: white;
+        font-size: 12pt;
+    }
+
+    a:hover{
+        color: #689deb;
+    }
+}
+
+
