@@ -19,3 +19,7 @@ $secondary-color: #020c1a;
     color: set-text-color($color)
 }
 
+.dark-color{
+    background: $secondary-color;
+}
+

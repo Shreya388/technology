@@ -34,7 +34,7 @@ img {
 
 .showcase {
     @include set-background($primary-color);
-    background: linear-gradient(120deg, rgb(48, 89, 179) 70%, rgb(2, 35, 126) 40%);
+    background: linear-gradient(120deg, rgba(26, 88, 233, 0.897) 70%, rgb(2, 35, 126) 40%);
     height: 700px;
     
     .container-fluid{
@@ -69,6 +69,10 @@ img {
 
         p {
             margin: 10px 0;
+        }
+
+        #contact_div{
+            
         }
     }
 }
@@ -108,7 +112,26 @@ img {
 }
 
 
+#feature{
 
+    .container{
+
+    #overlay{
+        background: rgba(0, 0, 0, 0.212);
+
+        button{
+            display: none;
+        }
+    }
+
+    #overlay:hover{
+        background: rgba(1, 9, 14, 0.925);
+        button{
+            display: revert;
+        }
+    }
+   }
+}
 
 #ourteam{
     
