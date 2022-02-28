@@ -118,17 +118,11 @@ img {
 
     #overlay{
         background: rgba(0, 0, 0, 0.212);
-
-        button{
-            display: none;
-        }
     }
 
     #overlay:hover{
         background: rgba(1, 9, 14, 0.925);
-        button{
-            display: revert;
-        }
+     
     }
    }
 }
